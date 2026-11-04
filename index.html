@@ -35,24 +35,6 @@
     .hero-note { max-width: 280px; justify-self: end; padding-bottom: 5px; }
     .hero-note p { margin: 0; font-family: var(--serif); font-size: clamp(19px, 2vw, 25px); line-height: 1.35; }
     .hero-note small { display: block; margin-top: 23px; color: var(--muted); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
-    .visual { min-height: 330px; position: relative; overflow: hidden; background: #d8d8ca; }
-    .visual::before, .visual::after { content: ''; position: absolute; border-radius: 50%; }
-    .visual::before { width: min(52vw, 530px); height: min(52vw, 530px); background: var(--olive); left: 10%; top: -37%; }
-    .visual::after { width: min(36vw, 380px); height: min(36vw, 380px); background: var(--accent); right: 8%; bottom: -42%; mix-blend-mode: multiply; }
-    .shape { position: absolute; z-index: 1; width: 115px; height: 115px; border: 1px solid rgba(32,33,31,.45); transform: rotate(45deg); left: 46%; top: 39%; }
-    .visual-label { position: absolute; z-index: 2; bottom: 22px; left: 24px; color: rgba(32,33,31,.7); font-family: var(--serif); font-style: italic; font-size: 15px; }
-    .intro { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 70px 0; border-bottom: 1px solid var(--line); }
-    .section-label { color: var(--muted); font-size: 11px; letter-spacing: .15em; text-transform: uppercase; }
-    .intro-copy { max-width: 760px; font-size: clamp(22px, 3.3vw, 38px); line-height: 1.24; letter-spacing: -.04em; }
-    .intro-copy p { margin: 0; }
-    .intro-copy em { font-family: var(--serif); font-weight: 400; }
-    .focus { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 32px 0 75px; }
-    .focus-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .focus-item { padding-top: 16px; border-top: 1px solid var(--line); }
-    .focus-item span { display: block; color: var(--accent); font-family: var(--serif); font-size: 15px; font-style: italic; }
-    .focus-item h2 { margin: 20px 0 0; font-family: var(--serif); font-size: clamp(21px, 2.7vw, 32px); font-weight: 400; letter-spacing: -.045em; }
-    footer { min-height: 86px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; letter-spacing: .04em; }
-    footer strong { color: var(--ink); font-weight: 600; }
     @media (max-width: 700px) {
       .wrap { width: min(100% - 36px, 560px); }
       header { min-height: 70px; }
@@ -60,8 +42,7 @@
       .hero { grid-template-columns: 1fr; padding: 48px 0 42px; gap: 28px; }
       h1 { font-size: clamp(70px, 18vw, 120px); }
       .hero-note { justify-self: start; max-width: 340px; }
-      .visual { min-height: 250px; }
-      .intro, .focus { grid-template-columns: 1fr; gap: 24px; }
+.intro, .focus { grid-template-columns: 1fr; gap: 24px; }
       .intro { padding: 48px 0; }
       .focus { padding-bottom: 54px; }
       .focus-list { grid-template-columns: 1fr; gap: 25px; }
@@ -86,11 +67,7 @@
           <small>Marketing · Creative · Culture</small>
         </div>
       </section>
-      <div class="visual" role="img" aria-label="Abstract composition of soft olive and vermilion shapes">
-        <div class="shape"></div>
-        <div class="visual-label">A little curiosity goes a long way.</div>
-      </div>
-      <section class="intro">
+<section class="intro">
         <div class="section-label">A little about me</div>
         <div class="intro-copy">
           <p><em>Mio is Life</em> is a marketing specialist working across AI, creative content production, and culture—shaping ideas into thoughtful stories and experiences.</p>
@@ -113,3 +90,4 @@
   </div>
 </body>
 </html>
+
